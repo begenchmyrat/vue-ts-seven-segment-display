@@ -1,6 +1,6 @@
 {
   "name": "vue-ts-seven-segment-display",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A simple seven-segment display component built with Vue and TypeScript.",
   "keywords": [
     "vue",
