@@ -10,8 +10,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "VueTsSevenSegmentDisplay",
-      fileName: "vue-ts-seven-segment-display",
+      name: "SevenSegmentDisplay",
+      fileName: "seven-segment-display",
     },
     rollupOptions: {
       external: ["vue"],
