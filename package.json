@@ -17,13 +17,13 @@
   ],
   "main": "./dist/vue-ts-seven-segment-display.umd.js",
   "module": "./dist/vue-ts-seven-segment-display.es.js",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/vue-ts-seven-segment-display.es.js",
       "require": "./dist/vue-ts-seven-segment-display.umd.js"
     }
   },
-  "types": "./dist/types/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
@@ -37,7 +37,7 @@
   "license": "ISC",
   "dependencies": {
     "vue": "^3.5.13",
-    "vue-ts-seven-segment-display": "^1.1.0"
+    "vue-ts-seven-segment-display": "^1.1.1"
   },
   "devDependencies": {
     "@types/node": "^22.13.14",

@@ -7,7 +7,6 @@ export default defineConfig({
   plugins: [vue()],
 
   build: {
-    cssCodeSplit: true,
     target: "esnext",
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),

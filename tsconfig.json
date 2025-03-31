@@ -1,27 +1,23 @@
 {
-  "include": ["src"],
-  "exclude": [
-    "dist",
-    "node_modules"
-  ],
   "compilerOptions": {
-    "module": "ESNext",
-    "lib": ["DOM", "ESNext"],
-    "importHelpers": true,
-    "declaration": true,
-    "sourceMap": true,
-    "rootDir": "./src",
-    "outDir": "./dist/esm",
-    "strict": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "baseUrl": "./",
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "react",
+    "isolatedModules": true,
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
     "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true
-  }
+    "outDir": "dist",
+    "declaration": true
+  },
+  "include": ["vite.config.*", "env.d.ts", "src/**/*", "src/**/*.vue"]
 }
