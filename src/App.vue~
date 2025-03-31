@@ -1,5 +1,5 @@
 <template>
-  <SevenSegmentDisplay :value="input" start-from-end auto-grow />
+  <SevenSegmentDisplay :value="input" start-from-end />
   <input v-model="input">
 </template>
 <script setup lang="ts">
