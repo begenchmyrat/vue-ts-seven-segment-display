@@ -1,6 +1,6 @@
 {
   "name": "vue-ts-seven-segment-display",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A simple seven-segment display component built with Vue and TypeScript.",
   "keywords": [
     "vue",
@@ -12,22 +12,21 @@
     "digit",
     "digital clock"
   ],
-  "files": [
-    "dist",
-    "src"
-  ],
-  "main": "./dist/VueTsSevenSegmentDisplay.umd.js",
-  "module": "./dist/VueTsSevenSegmentDisplay.es.js",
-  "types": "./dist/types/index.d.ts",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/vue-ts-seven-segment-display.umd.cjs",
+  "module": "./dist/vue-ts-seven-segment-display.js",
   "exports": {
     ".": {
-      "import": "./dist/VueTsSevenSegmentDisplay.es.js",
-      "require": "./dist/VueTsSevenSegmentDisplay.umd.js"
+      "import": "./dist/vue-ts-seven-segment-display.js",
+      "require": "./dist/vue-ts-seven-segment-display.umd.cjs"
     }
   },
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "types": "vue-tsc ",
     "preview": "vite preview"
   },
   "repository": {
@@ -38,7 +37,7 @@
   "license": "ISC",
   "dependencies": {
     "vue": "^3.5.13",
-    "vue-ts-seven-segment-display": "^1.1.2"
+    "vue-ts-seven-segment-display": "^1.1.3"
   },
   "devDependencies": {
     "@types/node": "^22.13.14",
@@ -46,7 +45,6 @@
     "@vue/tsconfig": "^0.7.0",
     "typescript": "~5.7.2",
     "vite": "^6.2.0",
-    "vite-plugin-dts": "^4.5.3",
     "vue-tsc": "^2.2.4"
   }
 }
